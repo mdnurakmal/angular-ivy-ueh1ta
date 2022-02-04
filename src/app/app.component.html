@@ -1,7 +1,11 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
-<app-side-bar>
+<app-search-bar></app-search-bar>
 
-</app-side-bar>
+<h1>Angular Router App</h1>
+<!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
+<nav>
+  <ul>
+    <li>
+      <a routerLink="/side-bar" routerLinkActive="active">First Component</a>
+    </li>
+  </ul>
+</nav>

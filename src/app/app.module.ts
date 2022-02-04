@@ -4,11 +4,12 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import { SearchBarComponent } from './home/components/search-bar/search-bar.component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent ],
-  bootstrap:    [ AppComponent ]
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  declarations: [AppComponent, HelloComponent, SearchBarComponent],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
