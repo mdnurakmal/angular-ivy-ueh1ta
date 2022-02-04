@@ -3,16 +3,19 @@ import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-side-bar',
-  templateUrl: './side-bar.component.html',
-  styleUrls: ['./side-bar.component.css'],
+  selector: 'app-search-bar',
+  templateUrl: './search-bar.component.html',
+  styleUrls: ['./search-bar.component.scss']
 })
-export class SideBarComponent implements OnInit {
-  constructor(private router: Router) {}
+export class SearchBarComponent implements OnInit {
 
-  ngOnInit() {}
+  constructor(private router: Router) { }
+
+  ngOnInit(): void {
+  }
 
   onSubmit(form: NgForm) {
     this.router.navigate(['search', form.value.search]);
   }
+
 }

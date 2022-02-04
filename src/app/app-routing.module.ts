@@ -1,12 +1,25 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { SideBarComponent } from './home/components/side-bar.component';
+import { DetailsComponent } from './components/details/details.component';
+import { HomeComponent } from './components/home/home.component';
 
-const routes: Routes = [{ path: 'side-bar', component: SideBarComponent }];
+const routes: Routes = [
+  {
+    path: '',
+    component: HomeComponent,
+  },
+  {
+    path: 'search/:game-search',
+    component: HomeComponent,
+  },
+  {
+    path: 'details/:id',
+    component: DetailsComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
